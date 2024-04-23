@@ -2383,6 +2383,7 @@ html[dir="rtl"] .nav.nav-separator .nav-item + .nav-item .nav-link:after {
   width: 100%;
 }
 
+
 .hero-wrap .hero-mask {
   z-index: 1;
 }
