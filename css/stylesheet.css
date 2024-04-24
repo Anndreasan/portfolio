@@ -3257,6 +3257,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
 
 .btn {
   padding: 0.8rem 2.6rem;
+  margin: 3rem;
   font-weight: 500;
   border-width: 2px;
   -webkit-transition: all 0.5s ease;
@@ -3294,6 +3295,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
 @media (max-width: 575.98px) {
   .btn:not(.btn-sm) {
     padding: .810rem 2rem;
+    margin-left: 5rem;
   }
   .input-group > .input-group-append > .btn, .input-group > .input-group-prepend > .btn {
     padding: 0 0.75rem;
