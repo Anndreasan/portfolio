@@ -2235,7 +2235,7 @@ html[dir="rtl"] .nav.nav-separator .nav-item + .nav-item .nav-link:after {
   position: relative;
   border-radius: 0;
   padding: 0.6rem 1rem;
-  color: #7b8084;
+  color: #000000;
   white-space: nowrap !important;
 }
 
