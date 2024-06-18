@@ -2677,7 +2677,7 @@ html[dir="rtl"] .list-style-1 > li:after {
   background: #fff;
   color: #252b33;
   padding: 66px 0px;
-  padding: 4.125rem 0;
+  padding: 1.225rem 0;
 }
 
 #footer .nav .nav-item {
