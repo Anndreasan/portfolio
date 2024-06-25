@@ -3331,7 +3331,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
 }
 
 a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
-  background-color: #1baa80 !important;
+  background-color: #eaefed !important;
 }
 
 .border-primary {
@@ -3348,8 +3348,9 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 }
 
 .btn-primary:hover {
-  background-color: #1baa80;
-  border-color: #1baa80;
+  background-color: #f1f5f4;
+  border-color: #000000;
+  color: black;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
