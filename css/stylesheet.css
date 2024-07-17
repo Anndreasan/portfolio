@@ -2428,6 +2428,12 @@ html[dir="rtl"] .nav.nav-separator .nav-item + .nav-item .nav-link:after {
   height: 100%;
 }
 
+@media (max-width: 767px) {
+  /* Anpassningar för mindre skärmar, till exempel smartphones */
+  .hero-bg {
+    background-size: auto; /* Anpassa storleken för att passa mindre skärmar */
+  }
+
 /*=== 5.7 Owl Carousel ===*/
 .owl-theme.single-slideshow .owl-nav button.owl-prev, .owl-theme.single-slideshow .owl-nav button.owl-next {
   font-size: 17px;
