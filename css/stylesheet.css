@@ -610,6 +610,7 @@ hr {
 .section {
   position: relative;
   padding: 4.5rem 0;
+  overflow: hidden;
 }
 
 @media (max-width: 575.98px) {
