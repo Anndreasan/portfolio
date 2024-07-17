@@ -2415,6 +2415,14 @@ html[dir="rtl"] .nav.nav-separator .nav-item + .nav-item .nav-link:after {
   transition: background-image 300ms ease-in 200ms;
 }
 
+
+@media (max-width: 575.98px) {
+  .hero-wrap .hero-bg {
+    background-attachment: scroll; /* Anpassa efter behov för mobil */
+  }
+}
+
+
 .hero-wrap .hero-bg.hero-bg-scroll {
   background-attachment: scroll;
 }
