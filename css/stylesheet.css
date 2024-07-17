@@ -2427,6 +2427,11 @@ html[dir="rtl"] .nav.nav-separator .nav-item + .nav-item .nav-link:after {
 .hero-wrap .hero-bg-slideshow.owl-carousel .owl-stage-outer, .hero-wrap .hero-bg-slideshow.owl-carousel .owl-stage, .hero-wrap .hero-bg-slideshow.owl-carousel .owl-item {
   height: 100%;
 }
+@media (max-width: 575.98px) {
+  .hero-wrap .hero-bg {
+    background-size: auto; /* Anpassa storlek för mindre skärmar */
+  }
+}
 
 /*=== 5.7 Owl Carousel ===*/
 .owl-theme.single-slideshow .owl-nav button.owl-prev, .owl-theme.single-slideshow .owl-nav button.owl-next {
