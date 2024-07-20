@@ -617,13 +617,6 @@ hr {
   .section {
     padding: 3.5rem 0;
   }
-
-  .responsive-image {
-    width: 100%;
-    height: auto;
-  }
-}
-
 }
 /*== Scroll Down Arrow ==*/
 .scroll-down-arrow {
@@ -3307,19 +3300,6 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
   }
   .input-group > .input-group-append > .btn, .input-group > .input-group-prepend > .btn {
     padding: 0 0.75rem;
-  }
-}
-
-/* CSS för att centrera knappen */
-.btn-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem; /* Justera marginalen efter behov */
-}
-
-@media (max-width: 575.98px) {
-  .btn-container {
-    margin-top: 2rem; /* Justera marginalen för mobilvyn om det behövs */
   }
 }
 
