@@ -617,6 +617,13 @@ hr {
   .section {
     padding: 3.5rem 0;
   }
+
+  .responsive-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
 }
 /*== Scroll Down Arrow ==*/
 .scroll-down-arrow {
