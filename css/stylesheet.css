@@ -3303,6 +3303,19 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
   }
 }
 
+/* CSS för att centrera knappen */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* Justera marginalen efter behov */
+}
+
+@media (max-width: 575.98px) {
+  .btn-container {
+    margin-top: 2rem; /* Justera marginalen för mobilvyn om det behövs */
+  }
+}
+
 .bg-primary {
   background-color: #20c997 !important;
 }
