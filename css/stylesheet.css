@@ -3587,7 +3587,7 @@ input:-internal-autofill-selected {
 
 
 @media only screen and (max-width: 600px) {
-	.hero-bg {
+	.hero-wrap {
 		background-image: url("/images/Mobile.png");
 	}
   }
