@@ -2420,9 +2420,7 @@ html[dir="rtl"] .nav.nav-separator .nav-item + .nav-item .nav-link:after {
   background-attachment: scroll;
 }
 
-.hero-wrap .hero-bg-slideshow .hero-bg {
-  background-attachment: inherit;
-}
+
 
 .hero-wrap .hero-bg-slideshow.owl-carousel .owl-stage-outer, .hero-wrap .hero-bg-slideshow.owl-carousel .owl-stage, .hero-wrap .hero-bg-slideshow.owl-carousel .owl-item {
   height: 100%;
