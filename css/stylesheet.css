@@ -3584,3 +3584,10 @@ input:-internal-autofill-selected {
   left: -40px;
   border-radius: 4px 0px 0px 4px;
 }
+
+
+@media only screen and (max-width: 600px) {
+	.hero-bg {
+		background-image: url("/images/Mobile.png");
+	}
+  }
