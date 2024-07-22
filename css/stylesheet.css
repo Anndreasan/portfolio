@@ -2420,7 +2420,9 @@ html[dir="rtl"] .nav.nav-separator .nav-item + .nav-item .nav-link:after {
   background-attachment: scroll;
 }
 
-
+.hero-wrap .hero-bg-slideshow .hero-bg {
+  background-attachment: inherit;
+}
 
 .hero-wrap .hero-bg-slideshow.owl-carousel .owl-stage-outer, .hero-wrap .hero-bg-slideshow.owl-carousel .owl-stage, .hero-wrap .hero-bg-slideshow.owl-carousel .owl-item {
   height: 100%;
@@ -3582,10 +3584,3 @@ input:-internal-autofill-selected {
   left: -40px;
   border-radius: 4px 0px 0px 4px;
 }
-
-
-@media only screen and (max-width: 600px) {
-	.hero-wrap {
-		background-image: url("/images/Mobile.png");
-	}
-  }
