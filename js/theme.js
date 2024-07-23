@@ -379,12 +379,19 @@ form.on('submit', function (e) {
 function openModal(imageSrc) {
 	var modal = document.getElementById("myModal");
 	var modalImage = document.getElementById("modalImage");
-	modal.style.display = "block";
+	modal.style.display = "flex"; // Ensure modal is displayed as flex
 	modalImage.src = imageSrc;
   }
   
-  function closeModal() {
-	var modal = document.getElementById("myModal");
-	modal.style.display = "none";
+  function closeModal(event) {
+	if (event.target === event.currentTarget || event.target.classList.contains('close')) {
+	  var modal = document.getElementById("myModal");
+	  modal.style.display = "none";
+	}
   }
+  
+  // Attach closeModal to window to close modal if clicked outside image
+  window.addEventListener('click', function(event) {
+	closeModal(event);
+  });
   
