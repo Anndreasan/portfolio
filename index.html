@@ -515,17 +515,6 @@
       </div>
     </section>
     <!-- Testimonial end --> 
-    
-  <section class="image-section">
-      <div class="image-container">
-          <img src="images/exbevis.png" alt="Bild 1">
-          <h2>Degree certificate</h2>
-      </div>
-      <div class="image-container">
-          <img src="images/diplom.png" alt="Bild 2">
-          <h2>Diploma WCAG</h2>
-      </div>
-  </section>
 
     <!-- Contact Me
     ============================================= -->
@@ -536,27 +525,41 @@
           <h4 class="text-24 text-white opacity-8 text-uppercase text-center fw-400 w-100 mb-0">Contact</h4>
         </div>
         <!-- Heading end-->        
-          <div class="row gy-5">
-            <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
-              <h2 class="mb-3 text-5 text-white text-uppercase">Location</h2>
-              <p class="text-3 text-light mb-4">Sweden, Stockholm</p>
+        <div class="row gy-5">
+          <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
+            <h2 class="mb-3 text-5 text-white text-uppercase">Location</h2>
+            <p class="text-3 text-light mb-4">Sweden, Stockholm</p>
+          </div>
+          <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
+            <h2 class="mb-3 text-5 text-white text-uppercase">Contact information</h2>
+            <p class="text-3 text-light mb-4">Sweden, Stockholm</p>
+            <p class="text-3 text-light mb-1"><span class="text-primary text-4 me-2"><i class="fas fa-phone"></i></span>(+46) 73 949 32 86 </p>
+            <p class="text-3 text-light mb-4"><span class="text-primary text-4 me-2"><i class="fas fa-envelope"></i></span>andreas_adde94@hotmail.com</p>
+          </div>
+          <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
+            <h2 class="mb-3 text-5 text-white text-uppercase">Socials</h2>
+            <ul class="social-icons social-icons-muted justify-content-center justify-content-md-start">
+              <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/andreas-andersson-bab54a149/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <!-- New Column for Images -->
+          <div class="col-md-4 col-xl-3 text-center text-md-start">
+            <h2 class="mb-3 text-5 text-white text-uppercase">certification</h2>
+            <div class="d-flex justify-content-center">
+              <img src="images/exbevis.png" alt="First Image" class="img-fluid me-2" style="max-width: 45%; height: auto;" onclick="openModal('images/exbevis.png')">
+              <img src="images/diplom.png" alt="Second Image" class="img-fluid" style="max-width: 45%; height: auto;" onclick="openModal('images/diplom.png')">
             </div>
-            <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
-              <h2 class="mb-3 text-5 text-white text-uppercase">Contact information</h2>
-              <p class="text-3 text-light mb-4">Sweden, Stockholm</p>
-              <p class="text-3 text-light mb-1"><span class="text-primary text-4 me-2"><i class="fas fa-phone"></i></span>(+46) 73 949 32 86 </p>
-              <p class="text-3 text-light mb-4"><span class="text-primary text-4 me-2"><i class="fas fa-envelope"></i></span>andreas_adde94@hotmail.com</p>
-            </div>
-            <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
-              <h2 class="mb-3 text-5 text-white text-uppercase">Socials</h2>
-              <ul class="social-icons social-icons-muted justify-content-center justify-content-md-start">
-                <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/andreas-andersson-bab54a149/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>     
-        </div>
+          </div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+          </div>
+          
       </div>
     </section>
+    
     <!-- Contact Me end --> 
     
   </div>
