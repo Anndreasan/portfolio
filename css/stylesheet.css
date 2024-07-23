@@ -3636,6 +3636,7 @@ body {
   }
 }
 /*-------------------------------------------------*/
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -3647,7 +3648,6 @@ body {
   height: 100%; /* Full height */
   overflow: hidden; /* Prevent scrolling */
   background-color: rgba(0,0,0,0.9); /* Black with opacity */
-  display: flex; /* Center the content */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
@@ -3671,7 +3671,6 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-
 
 .close:hover,
 .close:focus {
