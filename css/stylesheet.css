@@ -3684,3 +3684,16 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+.hero-bg {
+  background-size: cover; /* Gör så att bilden täcker hela elementet */
+  background-position: center; /* Justerar bilden så att den är centrerad */
+  width: 100%; /* Gör så att elementet är lika brett som sin behållare */
+  height: 100vh; /* Gör så att elementet är lika högt som viewporten */
+}
+
+@media (max-width: 767px) {
+  .hero-bg {
+    height: 50vh; /* Anpassa höjden på mobilen om det behövs */
+  }
+}
