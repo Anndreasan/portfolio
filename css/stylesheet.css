@@ -3661,20 +3661,9 @@ body {
   display: block;
 }
 
-/* The Close Button 
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
+/* Döljer element på skärmar som är mindre än 768px */
+@media (max-width: 767px) {
+  .hide-on-mobile {
+      display: none;
+  }
 }
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-}
-The Close Button */
