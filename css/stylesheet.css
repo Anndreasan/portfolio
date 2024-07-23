@@ -3593,32 +3593,45 @@ body {
 
 /* Bilder - certifikat examensbevis */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .image-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  flex-wrap: wrap; /* Gör att elementen radbryts på små skärmar */
+  gap: 0; /* Ingen avstånd mellan bilderna */
+  padding: 20px; /* Lite padding runt sektionen */
 }
 
+/* Stil för varje bild-container */
 .image-container {
-  text-align: center;
-  max-width: 45%;
-  margin: 30px; /* Detta minskar avståndet mellan bilderna */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
 }
 
 .image-container img {
-  max-width: 60%;
-  height: auto;
+  max-width: 100%; /* Anpassar bildens bredd till container */
+  height: auto; /* Behåller bildens proportioner */
+  max-height: 400px; /* Gör bilden mindre i höjd */
+  object-fit: contain; /* Behåller hela bilden inom den angivna storleken */
 }
 
+/* Stil för rubrikerna */
 .image-container h2 {
+  text-align: center;
   margin-top: 10px;
-  font-size: 1.2em;
-  color: #333;
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* Responsiv design för mobila enheter */
+@media (max-width: 600px) {
+  .image-section {
+    flex-direction: column; /* Gör att bilderna staplas vertikalt på små skärmar */
+  }
+  
+  .image-container img {
+    max-height: 150px; /* Mindre höjd på bilderna för mobila enheter */
+  }
 }
