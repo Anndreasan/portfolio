@@ -3661,9 +3661,10 @@ body {
   display: block;
 }
 
-/* Döljer element på skärmar som är mindre än 768px */
+/* Döljer element på skärmar som är mindre än 768px bakgrundsbilden andra sidan i början */
 @media (max-width: 767px) {
   .hide-on-mobile {
       display: none;
   }
 }
+
