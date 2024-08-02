@@ -2688,7 +2688,7 @@ html[dir="rtl"] .list-style-1 > li:after {
 }
 
 #footer .nav .nav-item .nav-link {
-  color: #252b33;
+  color: #060606;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
