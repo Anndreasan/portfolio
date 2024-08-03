@@ -3669,7 +3669,7 @@ body {
 }
 
 .read-more-btn {
-  background-color: #000;
+  background-color: #101110;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -3681,5 +3681,5 @@ body {
 .read-more-btn:hover {
   background-color: #fff;
   color: #000;
-  border-color: 2px solid #000;
+  border-color: 2px solid #101110;
 }
