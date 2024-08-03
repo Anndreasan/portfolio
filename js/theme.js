@@ -395,3 +395,19 @@ function openModal(imageSrc) {
 	closeModal(event);
   });
   
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var readMoreBtns = document.querySelectorAll('.read-more-btn');
+    readMoreBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var moreText = this.previousElementSibling.querySelector('.more-text');
+        if (moreText.style.display === 'none') {
+          moreText.style.display = 'inline';
+          this.textContent = 'Read less';
+        } else {
+          moreText.style.display = 'none';
+          this.textContent = 'Read more';
+        }
+      });
+    });
+  });
