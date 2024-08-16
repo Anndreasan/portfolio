@@ -776,7 +776,7 @@ hr {
 .primary-menu ul.navbar-nav > li > a:not(.btn) {
   height: 70px;
   padding: 0px 0.85em;
-  color: #7f858a;
+  color: #101110;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   position: relative;
@@ -784,7 +784,7 @@ hr {
 }
 
 .primary-menu ul.navbar-nav > li:hover > a:not(.btn), .primary-menu ul.navbar-nav > li > a.active:not(.btn) {
-  color: #444646;
+  color: #717271;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
