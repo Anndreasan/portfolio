@@ -2494,7 +2494,7 @@ html[dir="rtl"] .nav.nav-separator .nav-item + .nav-item .nav-link:after {
 }
 
 .owl-theme.owl-light .owl-nav button.owl-prev, .owl-theme.owl-light .owl-nav button.owl-next {
-  background-color: rgba(250, 250, 250, 0.3);
+  background-color: rgba(250, 250, 250, 0.542);
   color: #fff;
 }
 
