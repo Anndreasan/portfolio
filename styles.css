@@ -16,21 +16,75 @@ header {
 main {
     padding: 20px;
     flex: 1;
+    width: 100%;
+    max-width: 1200px; /* Begränsar bredden för att centrera innehållet */
 }
+
+/* Bilder */
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));/* Justera bredden för att få en kvadratisk effekt */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Justera bredden för att få en responsiv design */
     gap: 10px;
+    margin-top: 40px; /* Lägg till utrymme ovanför galleri-sektionen */
 }
 
 .gallery img {
     width: 100%;
-    height: 400px; /* Justera höjden för att få en kvadratisk effekt */
-    object-fit: cover; /* Gör att bilden täcker hela containern utan att förvrängas */
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    height: 100%; /* Höjd på 100% så att alla bilder fyller utrymmet i rutorna */
+    object-fit: contain; /* Gör att hela bilden syns utan att beskäras */
+    border: 0.5px solid #eceaea; /* ram runt om bilderna*/
+    border-radius: 5px; /* tjockleken på ram runt om bilderna*/
+    background-color: #f9f9f9; /* Lägg till en bakgrundsfärg om det finns tomma utrymmen */
 }
+
+/* text */
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrera hela sektionen vertikalt */
+    height: 100%; /* Justerar höjden om det behövs */
+    text-align: left;
+}
+
+.content-container {
+    display: flex;
+    align-items: baseline; /* Justerar rubriken och texten till samma baslinje */
+}
+
+.content-container h1 {
+    font-size: 36px;
+    margin-right: 60px; /* Avstånd mellan rubriken och texten */
+    position: relative;
+}
+
+.content-container h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px; /* Avstånd mellan texten och linjen */
+    left: 0;
+}
+
+.text-content {
+    max-width: 600px; /* Begränsar bredden på textinnehållet */
+}
+
+.text-content p {
+    margin: 0 0 10px;
+}
+
+.highlighted-text {
+    font-weight: bold;
+    font-size: 20px; /* Justera storleken efter behov */
+}
+
+
+/* Footer */
 
 footer {
     background: #060606;
@@ -50,7 +104,7 @@ footer {
     }
 
     .gallery img {
-        height: 150px; /* Justera höjd för mobilvisning */
+        height: auto; /* Anpassar höjden automatiskt för mobilvisning */
     }
 
     main {
@@ -60,6 +114,65 @@ footer {
     footer {
         padding: 20px;
     }
+
+    .content-container {
+        flex-direction: column; /* Placera rubrik och text under varandra på små skärmar */
+        text-align: center;
+    }
+
+    .content-container h1 {
+        margin-bottom: 10px;
+    }
+
+    .content-container h1::after {
+        width: 50%; /* Gör linjen kortare på små skärmar */
+        margin: 0 auto;
+    }
+
+    .text-content {
+        max-width: 100%; /* Gör texten bredare på små skärmar */
+    }
+}
+
+/* video bakgrund */
+
+.content-section {
+    position: relative;
+    overflow: hidden;
+    color: white; /* För textens kontrast mot bakgrunden */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Placera videon bakom texten */
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Se till att videon täcker hela området */
+}
+
+.content-container {
+    position: relative; /* Håll innehållet ovanpå videon */
+    padding: 60px;
+}
+
+/* Lägg till en bakgrundsfärg med opacitet ovanpå videon */
+.content-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.579); /* Justera färg och opacitet som du vill */
+    z-index: 0; /* Lägg bakgrundsfärg ovanpå videon men under texten */
 }
 
 
