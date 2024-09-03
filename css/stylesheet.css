@@ -50,7 +50,7 @@ body, html {
 }
 
 .hero-bg {
-  background-image: url('/images/Bakvit.png');
+  background-image: url('/images/bakvit.png');
   background-size: cover; /* Cover the entire area */
   background-attachment: fixed; /* Parallax effect */
   background-position: center center; /* Center the image */
