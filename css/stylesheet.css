@@ -3489,7 +3489,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 
 .progress-bar,
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link, .dropdown-item.active, .dropdown-item:active {
-  background-color: #797b7d;
+  background-color: #356eb8;
 }
 
 .page-item.active .page-link,
