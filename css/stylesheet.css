@@ -3671,49 +3671,18 @@ body {
 
 /* Bilder - certifikat examensbevis */
 
-.image-section {
+.certification-images {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Gör att elementen radbryts på små skärmar */
-  gap: 0; /* Ingen avstånd mellan bilderna */
-  padding: 20px; /* Lite padding runt sektionen */
+  gap: 10px; /* Avstånd mellan bilderna */
+  margin-top: 10px; /* Liten marginal ovanför bilderna */
 }
 
-/* Stil för varje bild-container */
-.image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.certification-images img {
+  max-width: 25%; /* Anpassa bredden på bilderna */
+  height: auto;
+  cursor: pointer; /* För att indikera att bilden är klickbar */
 }
 
-.image-container img {
-  max-width: 100%; /* Anpassar bildens bredd till container */
-  height: auto; /* Behåller bildens proportioner */
-  max-height: 400px; /* Gör bilden mindre i höjd */
-  object-fit: contain; /* Behåller hela bilden inom den angivna storleken */
-}
-
-/* Stil för rubrikerna */
-.image-container h2 {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1em;
-  font-style: italic;
-}
-
-/* Responsiv design för mobila enheter */
-@media (max-width: 600px) {
-  .image-section {
-    flex-direction: column; /* Gör att bilderna staplas vertikalt på små skärmar */
-  }
-  
-  .image-container img {
-    max-height: 150px; /* Mindre höjd på bilderna för mobila enheter */
-  }
-}
 /*-------------------------------------------------*/
 
 /* The Modal (background) */
