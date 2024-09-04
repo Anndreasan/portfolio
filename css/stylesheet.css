@@ -3681,6 +3681,11 @@ body {
   max-width: 25%; /* Anpassa bredden på bilderna */
   height: auto;
   cursor: pointer; /* För att indikera att bilden är klickbar */
+  transition: transform 0.3s ease-in-out; /* Lägg till transition för att få en mjuk zoom-effekt */
+}
+
+.certification-images img:hover {
+  transform: scale(1.1); /* Zoomar in bilden när musen är över */
 }
 
 /*-------------------------------------------------*/
