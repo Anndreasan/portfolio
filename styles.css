@@ -176,36 +176,3 @@ footer {
 }
 
 
-/* Construction CSS allt detta ska bort sen*/
-
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #f4f4f4; /* Light background color */
-}
-
-.under-construction {
-    text-align: center;
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-p {
-    font-size: 1.2em;
-    color: #666;
-}
