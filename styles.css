@@ -16,12 +16,13 @@ header {
 main {
     padding: 0px;
     flex: 1;
-    max-width: 1200px; /* Behåll maxbredd för centrering av innehåll */
-    width: 100%; /* Se till att detta täcker hela tillgängliga bredden */
-    margin: 0; /* Centrera innehåll som inte ska sträcka sig över hela sidan */  
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; /* Centrera main-elementet */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrera allt innehåll inom main vertikalt */
 }
-
-/* Bilder */
 
 /* Bilder */
 
@@ -41,6 +42,7 @@ main {
     border-radius: 5px; /* tjockleken på ram runt om bilderna*/
     background-color: #f9f9f9; /* Lägg till en bakgrundsfärg om det finns tomma utrymmen */
 }
+
 
 /* text */
 
@@ -190,36 +192,3 @@ footer {
     z-index: 0; /* Lägg bakgrundsfärg ovanpå videon men under texten */
 }
 
-/* Construction CSS allt detta ska bort sen*/
-
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #f4f4f4; /* Light background color */
-    }
-    
-    .under-construction {
-    text-align: center;
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    
-    h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
-    }
-    
-    p {
-    font-size: 1.2em;
-    color: #666;
-    }
