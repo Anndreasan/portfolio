@@ -96,7 +96,7 @@ main {
 
 footer {
     background: #060606;
-    color: #fff;
+    color: #fafafacc;
     text-align: center;
     padding: 10px 0;
     box-sizing: border-box; /* Detta inkluderar padding i footerns totala bredd */
