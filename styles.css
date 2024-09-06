@@ -192,12 +192,18 @@ footer {
     z-index: 0; /* Lägg bakgrundsfärg ovanpå videon men under texten */
 }
 
+
+/* Galleri för små skärmar */
 @media (max-width: 600px) {
     .gallery {
         grid-template-columns: 1fr;
+        gap: 10px; /* Se till att det finns mellanrum mellan bilderna */
+        margin: 10px; /* Lägg till lite marginal runt galleriet */
     }
 
     .gallery img {
+        width: 100%;
         height: auto; /* Anpassar höjden automatiskt för mobilvisning */
+        object-fit: cover; /* Se till att bilderna täcker hela utrymmet */
     }
 }
