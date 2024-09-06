@@ -16,13 +16,12 @@ header {
 main {
     padding: 0px;
     flex: 1;
-    max-width: 1200px; 
-    width: 100%; 
-    margin: 0 auto; /* Centrera main-elementet */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centrera allt innehåll inom main vertikalt */
+    max-width: 1200px; /* Behåll maxbredd för centrering av innehåll */
+    width: 100%; /* Se till att detta täcker hela tillgängliga bredden */
+    margin: 0; /* Centrera innehåll som inte ska sträcka sig över hela sidan */  
 }
+
+/* Bilder */
 
 /* Bilder */
 
@@ -42,7 +41,6 @@ main {
     border-radius: 5px; /* tjockleken på ram runt om bilderna*/
     background-color: #f9f9f9; /* Lägg till en bakgrundsfärg om det finns tomma utrymmen */
 }
-
 
 /* text */
 
@@ -191,4 +189,3 @@ footer {
     background: rgba(0, 0, 0, 0.153); /* Justera färg och opacitet som du vill */
     z-index: 0; /* Lägg bakgrundsfärg ovanpå videon men under texten */
 }
-
