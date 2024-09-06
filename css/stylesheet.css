@@ -3738,3 +3738,32 @@ body {
   border-color: 2px solid #101110;
 }
 
+/* Popup-ruta */
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000000c4;
+  color: white;
+  padding: 13px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.304);
+  display: none; /* Döljer popupen initialt */
+  z-index: 1000; /* Håller popupen över andra element */
+}
+
+/* Stängningsknapp */
+.popup button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.popup button:hover {
+  background-color: #dc3545;
+}

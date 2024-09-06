@@ -413,3 +413,20 @@ function openModal(imageSrc) {
   });
 
   
+  document.addEventListener('DOMContentLoaded', function() {
+	// Visa popupen efter 4 sekunder
+	setTimeout(function() {
+		var popup = document.getElementById('welcome-popup');
+		popup.style.display = 'block';
+
+		// Stäng popupen automatiskt efter 7 sekunder från att den har visats
+		setTimeout(function() {
+			popup.style.display = 'none';
+		}, 9000); // 9 sekunder
+	}, 5000); // 5 sekunder
+
+	// Hantera stängning av popupen med stängknappen
+	document.getElementById('close-popup').addEventListener('click', function() {
+		document.getElementById('welcome-popup').style.display = 'none';
+	});
+});
