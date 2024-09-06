@@ -192,3 +192,12 @@ footer {
     z-index: 0; /* Lägg bakgrundsfärg ovanpå videon men under texten */
 }
 
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: auto; /* Anpassar höjden automatiskt för mobilvisning */
+    }
+}
