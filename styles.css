@@ -28,15 +28,17 @@ main {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
-    margin: 40px auto; /* Centrera galleriet horisontellt och skapa utrymme ovan och nedan */
-    max-width: 1200px; /* Se till att galleriet inte blir bredare än denna bredd */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Justera minskad storlek */
+    gap: 10px; /* Mindre mellanrum mellan bilderna */
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 100%; /* Se till att galleriet är fullt brett */
 }
+
 
 .gallery img {
     width: 100%;
-    height: auto; /* Höjd på 100% så att alla bilder fyller utrymmet i rutorna */
+    height: 100%; /* Höjd på 100% så att alla bilder fyller utrymmet i rutorna, auto gör att bilderna anpassas efter bildens storlek */
     object-fit: contain; /* Gör att hela bilden syns utan att beskäras */
     border: 0.5px solid #eceaea; /* ram runt om bilderna*/
     border-radius: 5px; /* tjockleken på ram runt om bilderna*/
