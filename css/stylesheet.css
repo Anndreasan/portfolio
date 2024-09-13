@@ -3715,12 +3715,12 @@ body {
 }
 
 
-/* Döljer element på skärmar som är mindre än 768px bakgrundsbilden andra sidan i början */
-@media (max-width: 767px) {
-  .hide-on-mobile {
-      display: none;
+/* Döljer element på skärmar mellan 768px och 1024px, typiskt för iPads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hide-on-ipad {
+    display: none;
   }
-} 
+}
 
 .read-more-btn {
   background-color: #101110;
