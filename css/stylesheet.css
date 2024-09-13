@@ -3715,9 +3715,9 @@ body {
 }
 
 
-/* Döljer element på skärmar mellan 768px och 1024px, typiskt för iPads */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hide-on-ipad {
+/* Döljer element på skärmar mindre än 768px samt på iPads (upp till 1024px) */
+@media (max-width: 1024px) {
+  .hide-on-mobile {
     display: none;
   }
 }
