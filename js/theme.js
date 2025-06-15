@@ -430,3 +430,20 @@ function openModal(imageSrc) {
 		document.getElementById('welcome-popup').style.display = 'none';
 	});
 });
+
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
+  });
+}
+
+function plusSlides(n) {
+  slideIndex = (slideIndex + n + slides.length) % slides.length;
+  showSlide(slideIndex);
+}
+
+// Starta första slide
+showSlide(slideIndex);
